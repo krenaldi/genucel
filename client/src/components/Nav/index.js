@@ -8,15 +8,30 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
-          <li className="mx-1">
+          <li className="mx-1 pr-2">
             <Link to="/orderHistory">
               Order History
             </Link>
           </li>
-          <li className="mx-1">
+          <li className="mx-1 pr-2">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
+            </a>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/before-and-after.html">
+              Before & After
+            </a>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/technology.html">
+              Technology
+            </a>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/reviews.html">
+              Reviews
             </a>
           </li>
         </ul>
@@ -24,15 +39,30 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row">
-          <li className="mx-1">
+          <li className="mx-1 pr-2">
             <Link to="/signup">
               Signup
             </Link>
           </li>
-          <li className="mx-1">
+          <li className="mx-1 pr-2">
             <Link to="/login">
               Login
             </Link>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/before-and-after.html">
+              Before & After
+            </a>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/technology.html">
+              Technology
+            </a>
+          </li>
+          <li className="mx-1 pr-2">
+            <a href="https://www.genucel.com/reviews.html">
+              Reviews
+            </a>
           </li>
         </ul>
       );
@@ -41,12 +71,12 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
-        </Link>
-      </h1>
+      <Link to="/">
+        <img src={`/images/logo.png`}
+          style={{ "max-width": "160px" }}
+          className="m-2"
+          alt="genucel logo" />
+      </Link>
 
       <nav>
         {showNavigation()}
