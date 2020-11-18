@@ -17,7 +17,7 @@ db.once('open', async () => {
     {
       name: 'ESSENTIAL PACKAGE',
       description:
-        '2 Months Supply <br> Under Eye Bags/Puffiness <br> Immediate Effects 2 <br> INSTANT $30 Coupon APPLIED AT CHECKOUT',
+        '2 Months Supply | Under Eye Bags/Puffiness | Immediate Effects 2 | INSTANT $30 Coupon APPLIED AT CHECKOUT',
       image: 'Essential-Package.png',
       category: categories[0]._id,
       price: 127.00,
@@ -28,7 +28,7 @@ db.once('open', async () => {
     {
       name: 'BEST SELLER!',
       description:
-        '2 Months Supply <br> Essentials Package Plus: <br> Droopy Eyelids <br> Microdermabrasion <br> Detox Masque <br><br> INSTANT $30 Coupon APPLIED AT CHECKOUT <br> 1 Complimentary Gift of choice below <br> FREE UPGRADE to RUSH SHIPPING',
+        '2 Months Supply | Essentials Package Plus: | Droopy Eyelids | Microdermabrasion | Detox Masque | INSTANT $30 Coupon APPLIED AT CHECKOUT | 1 Complimentary Gift of choice below | FREE UPGRADE to RUSH SHIPPING',
       image: 'Popular_Package.png',
       category: categories[0]._id,
       price: 154.00,
@@ -40,7 +40,7 @@ db.once('open', async () => {
       name: 'COMPLETE PACKAGE',
       category: categories[0]._id,
       description:
-        '2 Months Supply <br> Most Popular Package Plus: <br> Dark Spot Corrector <br> Cleanser Toner <br><br> INSTANT $30 Coupon APPLIED AT CHECKOUT <br> 2 Complimentary Gifts below <br> FREE UPGRADE to RUSH SHIPPING <br> Maximum Results - Guaranteed!',
+        '2 Months Supply | Most Popular Package Plus: | Dark Spot Corrector | Cleanser Toner || INSTANT $30 Coupon APPLIED AT CHECKOUT | 2 Complimentary Gifts below | FREE UPGRADE to RUSH SHIPPING | Maximum Results - Guaranteed!',
       image: 'Complete-Package.png',
       price: 220.00,
       quantity: 200,

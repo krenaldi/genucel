@@ -25,7 +25,7 @@ function Success() {
             }
 
             setTimeout(() => {
-                window.location.assign('http://localhost:3000/orderHistory');
+                window.location.assign(url + '/orderHistory');
             }, 3000);
         }
         saveOrder()

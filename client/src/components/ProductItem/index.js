@@ -57,7 +57,7 @@ function ProductItem(item) {
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <p style={{"textDecoration": "line-through"}}>${msrp}</p>
+        <p style={{"textDecoration": "line-through"}}> MSRP: ${msrp}</p>
         <p style={{"fontWeight": 600}}>${price}</p>
         <p className="savings px-2">{savings}</p>
       </div>
