@@ -51,7 +51,7 @@ db.once('open', async () => {
       name: 'New! Zotique Deep Correcting Serum',
       category: categories[0]._id,
       description:
-        "Nobody misses those days when acne was a daily battle. So being able to get rid of reminders like acne scars, dark spots, and even new blemishes would be awesome. That's why we have formulated Zotique!",
+        "Nobody misses those days when acne was a daily battle. So being able to get rid of reminders like acne scars, dark spots, and even new blemishes would be awesome. That's why we have formulated Zotique! \n Available for free with the Best Seller or Complete Package",
       image: 'Zotique.png',
       price: 0.00,
       quantity: 250,
@@ -61,7 +61,7 @@ db.once('open', async () => {
       name: 'New! Genucel Ultra Retinol',
       category: categories[0]._id,
       description:
-        'This revitalizing and restorative créme is infused with Bakuchiol®, the natural alternative to retinol, to dramatically reduce the appearance of redness on your skin and so much more.',
+        'This revitalizing and restorative créme is infused with Bakuchiol®, the natural alternative to retinol, to dramatically reduce the appearance of redness on your skin and so much more. \n Available for free with the Best Seller or Complete Package',
       image: 'Genucel-Ultra-Retinol.png',
       price: 0.00,
       quantity: 200,

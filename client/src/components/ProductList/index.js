@@ -63,6 +63,8 @@ function ProductList() {
                   name={product.name}
                   price={product.price}
                   quantity={product.quantity}
+                  savings={product.savings}
+                  msrp={product.msrp}
                 />
             ))}
         </div>

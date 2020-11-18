@@ -114,7 +114,7 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--pink);
 }
 
 button:hover {
@@ -219,6 +219,11 @@ input:focus {
 
 .error-text {
   color: var(--error);
+}
+
+.savings {
+  color: white;
+  background: var(--tertiary);
 }
 
 @media screen and (max-width: 768px) {
