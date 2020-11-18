@@ -73,7 +73,7 @@ function Nav() {
     <header className="flex-row px-1">
       <Link to="/">
         <img src={`/images/logo.png`}
-          style={{ "max-width": "160px" }}
+          style={{ "maxWidth": "160px" }}
           className="m-2"
           alt="genucel logo" />
       </Link>
