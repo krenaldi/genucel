@@ -9,6 +9,8 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
+      savings
+      msrp
       category {
         _id
       }
@@ -24,6 +26,8 @@ export const QUERY_ALL_PRODUCTS = gql`
       description
       price
       quantity
+      savings
+      msrp
       category {
         name
       }
@@ -55,6 +59,8 @@ export const QUERY_USER = gql`
         price
         quantity
         image
+        savings
+        msrp
       }
     }
   }

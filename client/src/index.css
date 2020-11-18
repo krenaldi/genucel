@@ -95,10 +95,13 @@ nav ul {
   list-style-type: none;
 }
 
-footer {
+footer div {
   background: #9f294b;
   color: #ffffff;
-  padding: 40px 0;
+  padding: 40px;
+}
+footer div p {
+  font-size: 0.85rem;
 }
 
 footer a {

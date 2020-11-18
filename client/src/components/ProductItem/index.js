@@ -17,6 +17,8 @@ function ProductItem(item) {
     msrp
   } = item;
 
+  // console.log(item);
+
   const [state, dispatch] = useStoreContext();
 
   const { cart } = state;
@@ -55,9 +57,9 @@ function ProductItem(item) {
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${msrp}</span>
-        <span>${price}</span>
-        <span className="savings px-2">{savings}</span>
+        <p style={{"textDecoration": "line-through"}}>${msrp}</p>
+        <p style={{"fontWeight": 600}}>${price}</p>
+        <p className="savings px-2">{savings}</p>
       </div>
       <button onClick={addToCart}>Add to cart</button>
     </div>
