@@ -5,11 +5,8 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Packages' },
+    { name: 'Add-on Products' }
   ]);
 
   console.log('categories seeded');
@@ -18,111 +15,77 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'ESSENTIAL PACKAGE',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        '2 Months Supply <br> Under Eye Bags/Puffiness <br> Immediate Effects 2 <br> INSTANT $30 Coupon APPLIED AT CHECKOUT',
+      image: 'Essential-Package.png',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 127.00,
+      quantity: 500,
+      savings: "55% SAVINGS",
+      msrp: 267
     },
     {
-      name: 'Canned Coffee',
+      name: 'BEST SELLER!',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        '2 Months Supply <br> Essentials Package Plus: <br> Droopy Eyelids <br> Microdermabrasion <br> Detox Masque <br><br> INSTANT $30 Coupon APPLIED AT CHECKOUT <br> 1 Complimentary Gift of choice below <br> FREE UPGRADE to RUSH SHIPPING',
+      image: 'Popular_Package.png',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 154.00,
+      quantity: 500,
+      savings: "70% SAVINGS",
+      msrp: 583
     },
     {
-      name: 'Toilet Paper',
+      name: 'COMPLETE PACKAGE',
+      category: categories[0]._id,
+      description:
+        '2 Months Supply <br> Most Popular Package Plus: <br> Dark Spot Corrector <br> Cleanser Toner <br><br> INSTANT $30 Coupon APPLIED AT CHECKOUT <br> 2 Complimentary Gifts below <br> FREE UPGRADE to RUSH SHIPPING <br> Maximum Results - Guaranteed!',
+      image: 'Complete-Package.png',
+      price: 220.00,
+      quantity: 200,
+      savings: "75% SAVINGS",
+      msrp: 878
+    },
+    {
+      name: 'New! Zotique Deep Correcting Serum',
+      category: categories[0]._id,
+      description:
+        "Nobody misses those days when acne was a daily battle. So being able to get rid of reminders like acne scars, dark spots, and even new blemishes would be awesome. That's why we have formulated Zotique!",
+      image: 'Zotique.png',
+      price: 0.00,
+      quantity: 250,
+      msrp: 109
+    },
+    {
+      name: 'New! Genucel Ultra Retinol',
+      category: categories[0]._id,
+      description:
+        'This revitalizing and restorative créme is infused with Bakuchiol®, the natural alternative to retinol, to dramatically reduce the appearance of redness on your skin and so much more.',
+      image: 'Genucel-Ultra-Retinol.png',
+      price: 0.00,
+      quantity: 200,
+      msrp: 110
+    },
+    {
+      name: 'Genucel Dark Circle Treatment',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      price: 7.99,
-      quantity: 20
+        'Helps to fade the appearance of unsightly dark circles in just a few days!',
+      image: 'Dark-Circle-Treatment.png',
+      price: 19.95,
+      quantity: 250,
+      msrp: 99
     },
     {
-      name: 'Handmade Soap',
+      name: 'Revitalizing Face Créme',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
-    },
-    {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
-      quantity: 100
-    },
-    {
-      name: 'Camera',
-      category: categories[2]._id,
-      description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
-    },
-    {
-      name: 'Tablet',
-      category: categories[2]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
-    },
-    {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
-      quantity: 100
-    },
-    {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
+        'Perfect for enhancing the appearance of healthy, vibrant, youthful-looking skin',
+      image: 'Revitalizing_Face_Creme.png',
+      price: 19.95,
+      quantity: 200,
+      msrp: 99
     }
   ]);
 

@@ -24,6 +24,12 @@ const productSchema = new Schema({
     min: 0,
     default: 0
   },
+  savings: {
+    type: String
+  },
+  msrp: {
+    type: Number
+  },
   category: {
     type: Schema.Types.ObjectId,
     ref: 'Category',
