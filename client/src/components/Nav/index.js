@@ -20,17 +20,17 @@ function Nav() {
             </a>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/before-and-after.html">
+            <a href="https://www.genucel.com/before-and-after.html" target="_blank" rel="noreferrer">
               Before & After
             </a>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/technology.html">
+            <a href="https://www.genucel.com/technology.html" target="_blank" rel="noreferrer">
               Technology
             </a>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/reviews.html">
+            <a href="https://www.genucel.com/reviews.html" target="_blank" rel="noreferrer">
               Reviews
             </a>
           </li>
@@ -50,17 +50,17 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/before-and-after.html">
+            <a href="https://www.genucel.com/before-and-after.html" target="_blank" rel="noreferrer">
               Before & After
             </a>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/technology.html">
+            <a href="https://www.genucel.com/technology.html" target="_blank" rel="noreferrer">
               Technology
             </a>
           </li>
           <li className="mx-1 pr-2">
-            <a href="https://www.genucel.com/reviews.html">
+            <a href="https://www.genucel.com/reviews.html" target="_blank" rel="noreferrer">
               Reviews
             </a>
           </li>
