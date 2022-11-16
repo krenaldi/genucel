@@ -5,6 +5,7 @@ This app is a _**fully functional e-commerce**_ site that utitlizes **React** in
 After initial access, the site fully works offline by making use of the built-in [**IndexedDB API**](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexedDB") on browsers.
 
 ## About This App
+
 The link to the deployed site can be found [here on Heroku](https://ancient-retreat-32530.herokuapp.com/ "Genucel E-Commerce"). It’s a standard shopping cart that requires you to sign up for an account before it let’s you checkout. This site only requires a first & last name, email, and password. _**NOTE: There are no password requirements like having a specific length or having a certain number of specific characters since this is only a test site though it could be added rather easily.**_
 
 > On a side note: I find that if users can sign up and login to a site they are more likely to come back and purchase more if they don’t have to keep putting in the same information. Some users would even sign up for a subscription if that was an option.
