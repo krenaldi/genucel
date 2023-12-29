@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="">
+        <footer className="fixed-bottom">
             <div className="bg-maroon">
                 <p className="soft-text">State sales tax will be charged on all orders shipped to the following states: NJ.</p>
                 <p className="soft-text">*** Results may vary.</p>
