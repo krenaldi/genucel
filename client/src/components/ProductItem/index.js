@@ -17,8 +17,6 @@ function ProductItem(item) {
     msrp
   } = item;
 
-  // console.log(item);
-
   const [state, dispatch] = useStoreContext();
 
   const { cart } = state;
